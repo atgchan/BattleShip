@@ -4,13 +4,20 @@
 #include "Map.h"
 
 
-class GameMaster 
+class GameManager 
 {
 public:
-	GameMaster();
-	~GameMaster();
+	GameManager();
+	~GameManager();
+
+	void Init();
+	void Start();
+	void printResult(HitResult hitResult, std::string name);
+	void Reset();
+	int getGameCnt();
 
 private:
-	Map map;
-	Player currentPlayer;
+	Player m_Player1;
+	Player m_Player2;
+	int turnCnt = 0;
 };

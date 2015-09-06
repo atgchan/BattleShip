@@ -9,57 +9,81 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Map">
+      <UniqueIdentifier>{6d9470a9-0d2e-418d-8e49-c617c5f1ffeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ship">
+      <UniqueIdentifier>{9fb739e1-7176-4f42-a832-9416114db96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{b522f189-5c5d-4baf-b798-45f274173b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{c10a3240-b4f8-47b8-848f-089a98aaf4ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Map.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Map</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Tile.h">
+      <Filter>Source Files\Map</Filter>
     </ClInclude>
     <ClInclude Include="Ship.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Ship</Filter>
     </ClInclude>
-    <ClInclude Include="Ship_2.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Ship_3.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Enum.h">
+      <Filter>Source Files\Util</Filter>
     </ClInclude>
-    <ClInclude Include="Ship_4.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Destroyer.h">
+      <Filter>Source Files\Ship</Filter>
     </ClInclude>
-    <ClInclude Include="Ship_5.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Cruiser.h">
+      <Filter>Source Files\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="Battleship.h">
+      <Filter>Source Files\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="Aircraft.h">
+      <Filter>Source Files\Ship</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Map.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files\Map</Filter>
     </ClCompile>
     <ClCompile Include="Ship.cpp">
+      <Filter>Source Files\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ship_2.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Destroyer.cpp">
+      <Filter>Source Files\Ship</Filter>
     </ClCompile>
-    <ClCompile Include="Ship_3.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Cruiser.cpp">
+      <Filter>Source Files\Ship</Filter>
     </ClCompile>
-    <ClCompile Include="Ship_4.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Battleship.cpp">
+      <Filter>Source Files\Ship</Filter>
     </ClCompile>
-    <ClCompile Include="Ship_5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Aircraft.cpp">
+      <Filter>Source Files\Ship</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

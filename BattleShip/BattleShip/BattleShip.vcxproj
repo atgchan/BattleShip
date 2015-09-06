@@ -76,24 +76,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Enum.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Ship.h" />
-    <ClInclude Include="Ship_2.h" />
-    <ClInclude Include="Ship_3.h" />
-    <ClInclude Include="Ship_4.h" />
-    <ClInclude Include="Ship_5.h" />
+    <ClInclude Include="Destroyer.h" />
+    <ClInclude Include="Cruiser.h" />
+    <ClInclude Include="Battleship.h" />
+    <ClInclude Include="Aircraft.h" />
+    <ClInclude Include="Tile.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Ship.cpp" />
-    <ClCompile Include="Ship_2.cpp" />
-    <ClCompile Include="Ship_3.cpp" />
-    <ClCompile Include="Ship_4.cpp" />
-    <ClCompile Include="Ship_5.cpp" />
+    <ClCompile Include="Destroyer.cpp" />
+    <ClCompile Include="Cruiser.cpp" />
+    <ClCompile Include="Battleship.cpp" />
+    <ClCompile Include="Aircraft.cpp" />
+    <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

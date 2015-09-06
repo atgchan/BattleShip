@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include "Ship_5.h"
-
+#include "Aircraft.h"
+#include "Player.h"
+#include <time.h>
+#include "GameManager.h"
 int main()
 {
-	Ship_5 Ship_5;
-
-	printf("[Ship_5] name = %s, hp = %d \n",
-		Ship_5.GetName().c_str(),
-		Ship_5.GetHp());
-
-	for (int i = 0; i < 10; i++)
-	{
-		Ship_5.AddPosition('a','1'+i);
-	}
-
-	Ship_5.printPosition();
+	srand(unsigned(time(NULL)));
+	GameManager gm;
+	
+	int total = 0;
 
 	for (int i = 0; i < 10; i++)
 	{
-		printf("%d차 결과: %d \n", i+1, Ship_5.HitCheck(Point('a', '1' + i)));
+		gm.Init();
+		gm.Start();
+		total += gm.getGameCnt();
+		gm.Reset();
 	}
+
+	printf("평균 턴 진행 수 : %d \n", total / 10);
 
 	getchar();
 	return 0;
